@@ -11,16 +11,13 @@ const Component = () => {
 
   useEffect(() => {
     const query = new URLSearchParams(location.search);
-    console.log(query.get('success'));
-
+    console.log(query.get("success"));
   }, []);
 
   return (
     <div>
       <form action="http://localhost:5000/payment" method="POST">
-        
         <button className="btn-large blue">Buy react {product.price} </button>
-        
       </form>
     </div>
   );
